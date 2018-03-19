@@ -13,6 +13,16 @@ body {
   @media (max-width: 480px) {
     .intro {
       justify-content: start; } }
+  .intro__hello {
+    max-width: 40rem;
+    margin: 0 auto;
+    color: #8c8c8c;
+    font-weight: 200; }
+    .intro__hello a {
+      color: #00DFFC;
+      transition: .5s; }
+      .intro__hello a:hover {
+        color: #005F6B; }
   .intro__header {
     color: #f2f2f2;
     font-size: 4rem;
@@ -43,6 +53,9 @@ body {
 
 [class^="social"]:hover:before {
   color: #005F6B; }
+
+[class^="icon"] {
+  font-size: 0; }
 
 [class^="social"]:before {
   font-family: "FontAwesome";

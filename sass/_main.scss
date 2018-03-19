@@ -15,7 +15,24 @@ body {
   @media (max-width: 480px) {
     justify-content: start;
   }
+
   height: 100vh;
+
+  &__hello {
+    max-width: 40rem;
+    margin: 0 auto;
+    color: $white--dark;
+    font-weight: 200;
+
+    a {
+      color: $blue--light;
+      transition: .5s;
+
+      &:hover {
+        color: $blue--dark;
+      }
+    }
+  }
 
   &__header {
     color: $white;
@@ -26,7 +43,7 @@ body {
   }
 
   &__subheader {
-    color: darken($white, 40);
+    color: $white--dark;
     margin: 0;
     font-weight: 200;
   }
@@ -37,6 +54,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+
 
     li {
       // float: left;
@@ -69,6 +87,10 @@ body {
       color: $blue--dark;
     }
   }
+}
+
+[class^="icon"] {
+  font-size: 0;
 }
 
 [class^="social"]:before {
